@@ -1,0 +1,15 @@
+
+# File di stato locali
+.usb_sync_state.json
+.target_usb.conf
+
+# Log
+*.log
+
+# File temporanei
+*.pyc
+__pycache__/
+
+# Credenziali e config locali
+*.local
+.env
