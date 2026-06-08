@@ -51,15 +51,18 @@ sudo systemctl daemon-reload
 sudo systemctl enable usb-music-sync
 sudo systemctl start usb-music-sync
 ```
-⚙️ Configurazione
-Variabili principali nello script
-Variabile	Descrizione	Default
-SOURCE_DIR	Directory della musica sul Pi	/root/Musica
-USB_DEST_FOLDER	Cartella sulla USB	MUSIC/Cantautorato
-USB_MOUNT_POINT	Punto di mount USB	/mnt/usb
-CHECK_INTERVAL	Secondi tra controlli USB	5
-SUPPORTED_EXTENSIONS	Formati audio supportati	.mp3, .wav, .flac, .m4a, .ogg, .aac
-USB Target (opzionale)
+## ⚙️ Configurazione
+
+### Variabili principali nello script
+
+| Variabile | Descrizione | Default |
+|-----------|-------------|---------|
+| `SOURCE_DIR` | Directory della musica sul Pi | `/root/Musica` |
+| `USB_DEST_FOLDER` | Cartella sulla USB dove copiare | `MUSIC/Cantautorato` |
+| `USB_MOUNT_POINT` | Punto di mount per la USB | `/mnt/usb` |
+| `CHECK_INTERVAL` | Secondi tra un controllo e l'altro | `5` |
+| `SUPPORTED_EXTENSIONS` | Formati audio supportati | `.mp3, .wav, .flac, .m4a, .ogg, .aac` |
+| `LOG_FILE` | Percorso del file di log | `/var/log/usb_music_sync.log` |
 
 Per sincronizzare SOLO con una USB specifica:
 ```bash
